@@ -1,35 +1,25 @@
-def sum (long, a) : 
-    if long == 1 :
-        return int(a)
-    
+def sum (long, num) : 
     suma = 0
     for i in range(0, long ) :
-        suma = suma + int(a[i])
-        print(i)
+        suma = suma + int(num[i])
     return suma
 
+valores_AB = input()
 
-AB = input()
-
-A = int(AB.split()[0])
-B = int (AB.split()[1])
-
-print(A)
-print(B)
+valor_A = int(valores_AB.split()[0])
+valor_B = int(valores_AB.split()[1])
 
 nums = []
 
-for auxA in range(A,B+1) :
-    num = auxA + 1 
-    nums.append(auxA)
-
-print(nums)
+for num_index in range(valor_A, valor_B + 1) : 
+    nums.append(num_index)
 
 count = 0
+
 for index,item in enumerate(nums) :
-    a = str(nums[index])
-    long = len(a)
-    acum = sum(long, a)
+    num = str(nums[index])
+    digits = len(num)
+    acum = sum(digits, num)
     count = count + acum
 
     print(count)
