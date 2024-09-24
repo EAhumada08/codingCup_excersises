@@ -22,5 +22,5 @@ for index,item in enumerate(nums) :
     acum = sum(digits, num)
     count = count + acum
 
-    print(count)
+print(count)
     
