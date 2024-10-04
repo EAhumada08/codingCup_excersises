@@ -7,7 +7,7 @@ for i in range(0, int(numero_casos)) :
     while len(letras_disponibles) < 1 or len(letras_disponibles) > 20 :
         letras_disponibles = input()
         #print(len(letras_disponibles))
-    while len(palabra_verificar) < 0 or len(palabra_verificar) > 20 :
+    while len(palabra_verificar) < 1 or len(palabra_verificar) > 20 :
         palabra_verificar = input()
 
     count = []
